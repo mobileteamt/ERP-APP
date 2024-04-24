@@ -9,8 +9,11 @@
 3. To make an order, you need to add products to your cart and go to the checkout page.
 4. On the checkout page, you need to add billing information and place an order.
 
-- Front end URL: http://localhost/erp-app/
-- Admin URL: http://localhost/erp-app/admin
+- Set your base url in app/Config/App.php.
+- Set your database details in the /app/Config/Database.php file on the $default array.
+
+- Front end URL: <base_url>/erp-app/
+- Admin URL: <base_url>/admin/
 
 ## Server Requirements
 
