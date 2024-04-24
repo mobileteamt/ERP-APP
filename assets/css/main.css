@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.product-img{
+    max-width: 250px;
+    margin: 0px auto;
+}
+.product-image{
+    width: 100%;
+    height: 100%;
+}
+.cart-img{
+    max-width: 280px;
+    padding: 5px;
+}
+.img-wrap{
+    width: 20%;
+}
+.product-details{
+    border-top: 1px solid #dee2e6;
+}
+.card-text{
+    padding-right: 10px;
+}
+.error-input{
+    border: 1px solid #e13748;
+}
+.form-wrap{
+    max-width: 600px;
+    margin: 0px auto;
+}
+.qty-wrap{
+    width: 14.5%;
+}
+.quantity{
+    text-align: center;
+}
+.required{
+    color: #ff001b;
+}
+.btn-pointer{
+    cursor: pointer;
+}
+.form-common{
+    max-width: 600px;
+    margin: 0px auto;
+}
+.errors, .error_msg, .form-error{
+    border: 1px solid #dd8585;
+    background-color: #f1bebe;
+    color: #b53333;
+}
+.success_msg{
+    border: 1px solid #68e368;
+    background-color: #cffdcf;
+    color: #23b523;
+}
+.success_msg, .error_msg{
+    padding: 8px 10px;
+    margin-top: 20px;
+}
+.errors{
+    padding: 8px 10px;
+    margin-bottom: 20px;
+}
+.errors ul{
+    margin: 0;
+    padding-left: 20px;
+}
+.form-control, .snippet, .btn{
+    border-radius: 2px;
+}
+.snippet{
+    padding: 10px;
+}
+.nav-link{
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav-link.link-default,
+.nav-link.link-default:hover,
+.nav-link.link-default:focus{
+    text-transform: none;
+}
+.navbar-text a, .navbar-text a:focus, .navbar-text a:hover{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0, 0.65);
+    text-decoration: none;
+    font-weight: 500;
+}
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+}
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #626161; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animation */
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

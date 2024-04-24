@@ -1,0 +1,361 @@
+CRITICAL - 2024-04-24 02:51:47 --> ErrorException: foreach() argument must be of type array|object, bool given
+[Method: GET, Route: checkout]
+in APPPATH\Views\layouts\user\cartDetails.php on line 4.
+ 1 APPPATH\Views\layouts\user\cartDetails.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/user/cartDetails', null, true)
+ 5 APPPATH\Views\user\checkout.php(56): CodeIgniter\View\View->include('layouts/user/cartDetails')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\checkout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/checkout', [], true)
+ 9 APPPATH\Controllers\BaseController.php(95): view('user/checkout', [])
+10 APPPATH\Controllers\UserController.php(147): App\Controllers\BaseController->randerPage('user/checkout')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->checkout()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 02:54:55 --> ErrorException: foreach() argument must be of type array|object, bool given
+[Method: GET, Route: checkout]
+in APPPATH\Views\layouts\user\cartDetails.php on line 4.
+ 1 APPPATH\Views\layouts\user\cartDetails.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/user/cartDetails', null, true)
+ 5 APPPATH\Views\user\checkout.php(56): CodeIgniter\View\View->include('layouts/user/cartDetails')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\checkout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/checkout', [], true)
+ 9 APPPATH\Controllers\BaseController.php(95): view('user/checkout', [])
+10 APPPATH\Controllers\UserController.php(144): App\Controllers\BaseController->randerPage('user/checkout')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->checkout()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:03:16 --> Error: Class "App\Controllers\Services" not found
+[Method: POST, Route: place_order]
+in APPPATH\Controllers\UserController.php on line 237.
+ 1 APPPATH\Controllers\UserController.php(230): App\Controllers\UserController->deleteCartCookie()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->placeOrder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 03:03:27 --> Error: Class "App\Controllers\Services" not found
+[Method: POST, Route: place_order]
+in APPPATH\Controllers\UserController.php on line 237.
+ 1 APPPATH\Controllers\UserController.php(230): App\Controllers\UserController->deleteCartCookie()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->placeOrder()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:50:00 --> ArgumentCountError: Too few arguments to function App\Models\CartModel::updateCart(), 1 passed in C:\xampp\htdocs\erp-app\app\Controllers\UserController.php on line 135 and exactly 2 expected
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Models\CartModel.php on line 40.
+ 1 APPPATH\Controllers\UserController.php(135): App\Models\CartModel->updateCart([...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:50:42 --> ErrorException: Undefined variable $cart_count
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 137.
+ 1 APPPATH\Controllers\UserController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart_count', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:50:52 --> ErrorException: Undefined variable $cart_count
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 137.
+ 1 APPPATH\Controllers\UserController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart_count', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:51:26 --> ErrorException: Undefined variable $cart_count
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 137.
+ 1 APPPATH\Controllers\UserController.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cart_count', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:52:56 --> ErrorException: Undefined array key "product_qty"
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 129.
+ 1 APPPATH\Controllers\UserController.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_qty"', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 129)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:55:09 --> ErrorException: Undefined array key "product_qty"
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 127.
+ 1 APPPATH\Controllers\UserController.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_qty"', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:55:39 --> ErrorException: Undefined array key "product_qty"
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 127.
+ 1 APPPATH\Controllers\UserController.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_qty"', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:55:59 --> ErrorException: Undefined array key "product_qty"
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 127.
+ 1 APPPATH\Controllers\UserController.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_qty"', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:56:03 --> ErrorException: Undefined variable $new_qty
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 133.
+ 1 APPPATH\Controllers\UserController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new_qty', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:56:38 --> ErrorException: Undefined variable $new_qty
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 133.
+ 1 APPPATH\Controllers\UserController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new_qty', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:57:11 --> ErrorException: Undefined array key "product_quantity"
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 127.
+ 1 APPPATH\Controllers\UserController.php(127): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "product_quantity"', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 127)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 07:58:41 --> ErrorException: Undefined variable $new_qty
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 135.
+ 1 APPPATH\Controllers\UserController.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new_qty', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 135)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:00:32 --> ErrorException: Undefined variable $new_qty
+[Method: POST, Route: update_cart_qty]
+in APPPATH\Controllers\UserController.php on line 136.
+ 1 APPPATH\Controllers\UserController.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $new_qty', 'C:\\xampp\\htdocs\\erp-app\\app\\Controllers\\UserController.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->updateCartQty()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:17:59 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:05 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:08 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/testing-product-4]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('testing-product-4')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:12 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:38 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:39 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:18:39 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:20:50 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 08:20:58 --> ErrorException: Trying to access array offset on value of type bool
+[Method: GET, Route: product/mug-3]
+in APPPATH\Views\user\productDetails.php on line 8.
+ 1 APPPATH\Views\user\productDetails.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\productDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/productDetails', [], true)
+ 5 APPPATH\Controllers\BaseController.php(95): view('user/productDetails', [...])
+ 6 APPPATH\Controllers\UserController.php(44): App\Controllers\BaseController->randerPage('user/productDetails', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->productDetails('mug-3')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 09:37:10 --> ErrorException: foreach() argument must be of type array|object, bool given
+[Method: GET, Route: checkout]
+in APPPATH\Views\layouts\user\cartDetails.php on line 4.
+ 1 APPPATH\Views\layouts\user\cartDetails.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/user/cartDetails', null, true)
+ 5 APPPATH\Views\user\checkout.php(60): CodeIgniter\View\View->include('layouts/user/cartDetails')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\checkout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/checkout', [], true)
+ 9 APPPATH\Controllers\BaseController.php(95): view('user/checkout', [])
+10 APPPATH\Controllers\UserController.php(156): App\Controllers\BaseController->randerPage('user/checkout')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->checkout()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-04-24 09:39:46 --> ErrorException: foreach() argument must be of type array|object, bool given
+[Method: GET, Route: checkout]
+in APPPATH\Views\layouts\user\cartDetails.php on line 4.
+ 1 APPPATH\Views\layouts\user\cartDetails.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, bool given', 'C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php', 4)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\layouts\\user\\cartDetails.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(484): CodeIgniter\View\View->render('layouts/user/cartDetails', null, true)
+ 5 APPPATH\Views\user\checkout.php(60): CodeIgniter\View\View->include('layouts/user/cartDetails')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\erp-app\\app\\Views\\user\\checkout.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('user/checkout', [], true)
+ 9 APPPATH\Controllers\BaseController.php(95): view('user/checkout', [])
+10 APPPATH\Controllers\UserController.php(156): App\Controllers\BaseController->randerPage('user/checkout')
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserController->checkout()
+12 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+13 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(312): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
