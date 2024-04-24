@@ -1,6 +1,7 @@
 # ERP Application in CodeIgniter 4 Framework
 
 - This is an ERP application built into CodeIgniter v4 for creating products with inventory.
+- MySql is used to manage databases.
 - There are admin sections available in the application to create, update, or delete products with inventory.
 
 - On the front-end section, you can do following actions:
@@ -11,6 +12,7 @@
 
 - Set your base url in app/Config/App.php.
 - Set your database details in the /app/Config/Database.php file on the $default array.
+- You can find the database in the root of the app "erp_ci_db" OR you can create a database using the command "php spark migrate"
 
 - Front end URL: <base_url>/erp-app/
 - Admin URL: <base_url>/admin/
