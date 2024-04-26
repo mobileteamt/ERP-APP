@@ -31,16 +31,11 @@ class UserController extends BaseController
 
     public function products(){
         $products = $this->product_obj->getProducts();
-        // echo '<pre>';print_r($products);
-        // die();
         return $this->randerPage("user/products",['products'=>$products]);
     }
 
     public function productDetails($slug){
         $product = $this->product_obj->getProductBySlug($slug);
-        // $product = $this->cart_obj->getCartProduct($slug);
-        // echo '<pre>';print_r($product);
-        // die();
         return $this->randerPage("user/productDetails",['product'=>$product]);
     }
 

@@ -55,10 +55,13 @@
     border: 1px solid #68e368;
     background-color: #cffdcf;
     color: #23b523;
+    margin-bottom: 20px;
+}
+.error_msg{
+    margin-top: 20px;
 }
 .success_msg, .error_msg{
     padding: 8px 10px;
-    margin-top: 20px;
 }
 .errors{
     padding: 8px 10px;

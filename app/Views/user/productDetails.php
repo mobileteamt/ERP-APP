@@ -7,12 +7,6 @@
             <div class="card-body">
                 <h5 class="card-title"><?= $product['name']; ?></h5>
                 <div class="card-text pb-2">Rs. <?= $product['discount_status'] == 'yes' && $product['discounted_price'] > 0 ? $product['discounted_price'] : $product['price']; ?></div>
-                <!--<div class="mb-3">
-                    <div class="input-group w-50">
-                        <span class="input-group-text">Quantity</span>
-                        <input type="text" class="form-control qty-input" id="qty_<?=$product['product_id']?>" data-qty="" placeholder="Enter quantity">
-                    </div>
-                </div>-->
                 <div class="qtySection qtSection_product_details">
                     <div class="pb-2">Quantity</div>
                     <div class="qty input-group mb-3 qty-wrap">

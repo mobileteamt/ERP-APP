@@ -26,6 +26,10 @@ class UserModel extends Model
         $this->db = $connect->table('users');
     }  
 
+    public function signUp($data){
+        $this->db->insert($data);
+    }
+
     public function validateUser($email, $password){
         $user = $this->db->where('email',$email)->get()->getRowArray();
         $response = [];
@@ -36,5 +40,13 @@ class UserModel extends Model
             $response = ['error'=>false,'message'=>'login success','data'=>$user];
         }
         return $response;
+    }
+
+    public function checkAdminUser(){
+        $adminUser = $this->db->where('role','1')->get();
+        if($adminUser->getNumRows()>0){
+            return true;
+        }
+        return false;
     }
 }

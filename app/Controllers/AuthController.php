@@ -24,6 +24,36 @@ class AuthController extends BaseController
         return $this->randerPage("admin/login");
     }
 
+    public function signup(){
+        $post = $this->request->getPost(['username','email','password','confirm_password']);
+        // echo '<pre>';print_r($post);
+        $datetime = date("Y-m-d H:i:s");
+
+        $rules = [
+            'username' => 'required|alpha',
+            'email' => 'required|valid_email',
+            'password' => 'required|min_length[8]',
+            'confirm_password' => 'required|matches[password]',
+        ];
+
+        $signup = [
+            'username' => $post['username'],
+            'email' => $post['email'],
+            'password' => password_hash($post['password'], PASSWORD_DEFAULT),
+            'role' => '1',
+            'created_at' => $datetime
+        ];
+        
+        $validate = $this->validateData($post,$rules);
+        if(!$validate){    
+            return redirect()->back()->withInput();
+        }
+
+        $this->user_obj->signUp($signup);
+        $this->session->setFlashData('form-success','You are registered successfully. Please login to continue.');
+        return redirect()->route("admin/login");
+    }   
+
     public function loginUser(){
         $postdata = $this->request->getPost(['email','password']);
 

@@ -10,14 +10,11 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'UserController::index');
 
 /* Admin Routes */
-
+$routes->post('admin/signup', 'AuthController::signup');
 $routes->get('admin', 'AuthController::index');
 $routes->get('admin/login', 'AuthController::index');
 $routes->post('admin/login_user', 'AuthController::loginUser');
 $routes->get('admin/dashboard', 'AdminController::index');
-
-// $routes->group('', ['filter' => 'AuthCheck'], function($routes){    
-// });
 
 $routes->get('admin/logout', 'AuthController::logout');
 $routes->get('admin/manage-products', 'AdminController::products');

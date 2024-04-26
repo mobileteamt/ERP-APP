@@ -23,4 +23,12 @@ if (!function_exists('getLastSegment')) {
     }
 }
 
+if (!function_exists('checkAdminUser')) {
+
+    function checkAdminUser(){
+        $db = model('UserModel');
+        return $db->checkAdminUser();
+    }
+}
+
 

@@ -4,6 +4,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
+
 class ProductModel extends Model
 {
     protected $table            = 'products';
@@ -38,7 +43,12 @@ class ProductModel extends Model
     public function addProduct($data){
         $query = $this->db->insert($data);
         $insert_id = $this->db_connect->insertID();
-        $slug = strtolower($data['name']).'-'.$insert_id;
+        $slug = strtolower($data['name']);
+        $slug = str_replace(" ","-",$slug);
+        $slug = preg_replace('/[^\p{L}\p{N}\s-]/u', '-', $slug);
+        $slug = ltrim($slug, "-");
+        $slug = rtrim($slug, "-");
+        $slug = str_replace("_","-",$slug).'-'.$insert_id;
         $this->updateProduct($insert_id,['slug'=>$slug]);
     }
 

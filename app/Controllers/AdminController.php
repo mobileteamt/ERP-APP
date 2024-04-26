@@ -34,8 +34,6 @@ class AdminController extends BaseController
         if($products->getNumRows() > 0){
             $data['products'] = $products->getResult();
         }
-        // echo '<pre>';print_r($data['products']);
-        // echo '</pre>';
         return $this->randerPage("admin/product/list", $data);
     }
 
@@ -65,7 +63,7 @@ class AdminController extends BaseController
         }
 
         $rules = [
-            'name' => 'required|alpha_numeric_space',
+            'name' => 'required',
             'quantity' => 'required|integer|greater_than_equal_to[1]',
             'price' => 'required|numeric|greater_than_equal_to[1]',
             'discount_status' => 'required|if_exist',
@@ -106,10 +104,7 @@ class AdminController extends BaseController
             $this->product_obj->addProduct($post);
             $this->session->setFlashData('success','Product created successfully.');
         }
-        
-        // echo '<pre>';print_r($post);
-        // die();
-        
+
         return redirect()->route('admin/manage-products');
     }
 
